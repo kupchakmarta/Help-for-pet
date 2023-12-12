@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kotik</title>
+    <style>
+        body {
+            font-family: Cambria, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFCC;
+        }
+
+        header {
+            background-color: #FFA500;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        section {
+            margin: 20px;
+            background-color: #ffff68e5;
+            background-image: url('p.jpg');
+            background-size: cover;
+            background-position: center; 
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .gallery-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px; 
+            background-color: #FFFFCC; 
+            padding: 10px;
+            box-sizing: border-box; 
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px; 
+            max-height: 150px; 
+            object-fit: cover; 
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 24px; 
+        }
+
+        button {
+            background-color: #FFA500; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px; 
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="GeneratedImage.png" alt="Pet.Help Logo">
+        <nav>
+            <ul>
+                <li><a href="main.html">Повідомити про тварину</a></li>
+                <li><a href="main.html">Стати опікуном</a></li>
+                <li><a href="main.html">Стати волонтером</a></li>
+                <li><a href="Pesik.html">Песики</a></li>
+                <li><a href="ProNas.html">Про нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Котики</h2>
+        <div class="gallery-section">
+
+            <div class="gallery-item">
+                <img src="1.jpg" alt="Котик 1">
+                <p><strong>Ім’я:</strong> Мурчик</p>
+                <p><strong>Вік:</strong> 2 роки</p>
+                <p><strong>Опис:</strong> Любить грати з м'ячем та обніматися</p>
+                <a href="Login.html"><button>Допомогти</button></a>
+            </div>
+
+            <div class="gallery-item">
+                <img src="2.jpg" alt="Котик 2">
+                <p><strong>Ім’я:</strong> Барсік</p>
+                <p><strong>Вік:</strong> 3 роки</p>
+                <p><strong>Опис:</strong> Веселий і грайливий, любить сонце</p>
+                <a href="Login.html"><button>Допомогти</button></a>
+            </div>
+
+            <div class="gallery-item">
+                <img src="3.jpg" alt="Котик 3">
+                <p><strong>Ім’я:</strong> Томас</p>
+                <p><strong>Вік:</strong> 1 рік</p>
+                <p><strong>Опис:</strong> Любить дивитися за вікном та гратися з м'ячем</p>
+                <a href="Login.html"><button>Допомогти</button></a>
+            </div>
+
+            <div class="gallery-item">
+                <img src="4.jpg" alt="Котик 4">
+                <p><strong>Ім’я:</strong> Віскі</p>
+                <p><strong>Вік:</strong> 2 роки</p>
+                <p><strong>Опис:</strong> Спокійний та ніжний, любить вечірні прогулянки</p>
+                <a href="Login.html"><button>Допомогти</button></a>
+            </div>
+
+            <div class="gallery-item">
+                <img src="5.jpg" alt="Котик 5">
+                <p><strong>Ім’я:</strong> Смайлик</p>
+                <p><strong>Вік:</strong> 1,5 роки</p>
+                <p><strong>Опис:</strong> Завжди веселий та готовий до гри</p>
+                <a href="Login.html"><button>Допомогти</button></a>
+            </div>
+
+            <div class="gallery-item">
+                <img src="6.jpg" alt="Котик 6">
+                <p><strong>Ім’я:</strong> Чарівник</p>
+                <p><strong>Вік:</strong> 4 роки</p>
+                <p><strong>Опис:</strong> Вміє виконувати трюки за командою</p>
+                <a href="Login.html"><button>Допомогти</button></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        body {
+            font-family: Cambria, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFCC;
+
+        }
+
+        header {
+            background-color: #FFA500;
+            color: #ffff68e5;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        section {
+    margin: 20px;
+    background-image: url('p.jpg'); 
+    background-size: cover; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+        .report-section,
+        .about-section,
+        .info-section,
+        .help-shelter-section,
+        .banner-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .report-section button,
+        .about-section button,
+        .info-section button,
+        .help-shelter-section button,
+        .banner-section button {
+            background-color: #FFA500;
+            color: #ffffffe5;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .footer-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-buttons button {
+            background-color: #FFA500;
+            color: #ffff68e5;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+       .info-block {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #FFFFCC; 
+    border: 5px solid #FFFFCC; 
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        .info-section button {
+            background-color: #FFA500;
+
+            color: #ffffffe5;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 20px;
+            align-self: center;
+        }
+
+        .banner-section {
+            background-color: #ffff68e5;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .banner-section button {
+            background-color: #FFA500;
+        }
+
+        .info-block img {
+            width: 100%;
+            max-width: 200px; 
+            border: 5px solid #FFFFFF; 
+            border-radius: 10px; 
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="GeneratedImage.png" alt="Pet.Help Logo">
+        <nav>
+            <ul>
+                <li><a href="#report-section">Повідомити про тварину</a></li>
+                <li><a href="#about-section">Про сайт</a></li>
+                <li><a href="#help-shelter-section">Допоможи притулку</a></li>
+                <li><a href="Pesik.html">Песики</a></li>
+                <li><a href="Kotik.html">Муркотики</a></li>
+                <li><a href="ProNas.html">Про нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="report-section" class="report-section">
+        <div>
+            <p><h1>Допоможи тварині та повідом про неї</h1></p>
+            <p>Не будь байдужим до маленького друга</p>
+            <img src="dog.jpg" alt="Ps1">
+        </div>
+        <a href="Message.html"><button>Повідомити про безпритульну тварину</button></a>
+    </section>
+
+    <section id="about-section" class="about-section">
+        <p><h1>Про сайт</h1></p>
+        <p>Цей сайт створений для оптимізації порятунку безпритульних тварин. Тут ти зможеш сповістити про безпритульну тварину, надати свою допомогу притулкам та матимеш можливість подарувати нашим меншим</p>
+        <a href="Pronas.html"><button>Дізнатися більше</button></a>
+    </section>
+
+    <section id="banner-section" class="banner-section">
+        <p><h1>Подаруй родину хвостатому другу.</h1></p>
+
+        <div class="info-section">
+            <div class="info-block">
+                <img src="cat.jpg" alt="Placeholder 1">
+                <p>Муркотики</p>
+                <a href="Kotik.html"><button>Більше</button></a>
+            </div>
+            <div class="info-block">
+                <img src="doggg.jpg" alt="Placeholder 2">
+                <p>Песики</p>
+                <a href="Pesik.html"><button>Більше</button></a>
+            </div>
+        </div>
+        <a href="Login.html"><button>Стати опікуном</button></a>
+    </section>
+
+    <section id="help-shelter-section" class="help-shelter-section">
+        <div class="info-block">
+        <p><h1>Допоможи притулку</h1></p>
+        <img src="hand.jpg" alt="Shelter Image">
+        <p>Стань волонтером на день</p>
+        <p>Багато притулків потребують допомоги, а саме: прибрати в клітках, погодувати тварин, вигуляти та доглянути за твариною тощо. Не будь байдужим та допоможи притулку, запропонуй свою допомогу, і після кнопка стати волонтером.</p>
+        <a href="Login.html"><button>Стати волонтером</button></a>
+    </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pesik</title>
+        <style>
+            body {
+                font-family: Cambria, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #FFFFCC; 
+            }
+    
+            header {
+                background-color: #FFA500; 
+                color: white;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+    
+            header img {
+                max-width: 150px;
+                height: auto;
+            }
+    
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+    
+            nav ul li {
+                margin-right: 10px;
+            }
+    
+            section {
+                margin: 20px;
+                background-color: #ffff68e5; 
+                background-image: url('p.jpg'); 
+                background-size: cover; /* Зробить зображення відповідним за розміром */
+                background-position: center; 
+                padding: 20px;
+                border-radius: 10px; 
+            }
+    
+            .dog-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+
+            .dog-photo {
+                width: 100%; /* Повний розмір на малих екранах */
+                max-width: 600px; /* Максимальний розмір фото */
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                background-color: #ffffff; 
+                padding: 10px;
+                border-radius: 10px; 
+            }
+
+            .dog-photo img {
+                width: 100%;
+                border-radius: 10px; 
+                max-height: 600px; 
+                object-fit: cover;
+            }
+
+            .dog-form {
+                width: calc(50% - 10px); /* 50% ширини батьківського контейнера мінус відступ між елементами */
+                box-sizing: border-box;
+                background-color: #FFFFCC; 
+                padding: 20px;
+                border-radius: 10px; 
+            }
+
+            .dog-form h2 {
+                text-align: center;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            .dog-form label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .dog-form input,
+            .dog-form textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+            }
+
+            .dog-form button {
+                background-color: #FFA500; 
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                border-radius: 10px; 
+                display: block;
+                margin-left: auto;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <header>
+            <img src="GeneratedImage.png" alt="Pet.Help Logo">
+            <nav>
+                <ul>
+                    <li><a href="Main.html">Повідомити про тварину</a></li>
+                    <li><a href="Main.html">Про сайт</a></li>
+                    <li><a href="Main.html">Допоможи притулку</a></li>
+                    <li><a href="Kotik.html">Муркотики</a></li>
+                    <li><a href="ProNas.html">Про нас</a></li>
+                </ul>
+            </nav>
+        </header>
+    <section class="dog-section">
+        <div class="dog-photo">
+
+            <img src="Browndog.jpg" alt="Gallery Image 1">
+        </div>
+        <div class="dog-form">
+            <h2>Сповістити про тварину</h2>
+            <form action="/submit_form.php" method="post">
+                <label for="pet_type">Тип тварини:</label>
+                <input type="text" id="pet_type" name="pet_type" required>
+
+                <label for="pet_features">Особливі прикмети:</label>
+                <textarea id="pet_features" name="pet_features" rows="4" required></textarea>
+
+                <label for="pet_color">Забарвлення:</label>
+                <input type="text" id="pet_color" name="pet_color" required>
+
+                <label for="pet_gender">Стать:</label>
+                <input type="text" id="pet_gender" name="pet_gender" required>
+
+                <label for="pet_size">Розмір:</label>
+                <input type="text" id="pet_size" name="pet_size" required>
+
+                <label for="pet_location">Місцезнаходження:</label>
+                <input type="text" id="pet_location" name="pet_location" required>
+
+                <button type="submit">Сповістити про тварину</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

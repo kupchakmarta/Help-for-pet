@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Cambria, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFCC; 
+        }
+
+        header {
+            background-color: #FFA500; 
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        section {
+            margin: 20px;
+            background-color: #ffff68e5; 
+            background-image: url('p.jpg');
+            background-size: cover; 
+        background-position: center; /* Вирівняє зображення по центру */
+            padding: 20px;
+            border-radius: 10px; 
+            text-align: center; 
+            max-width: 400px; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        button {
+            background-color: #FFA500; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 80%; 
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #login-btn {
+            background-color: #FFA500; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="GeneratedImage.png" alt="Pet.Help Logo">
+        <nav>
+            <ul>
+                <li><a href="Main.html">Повідомити про тварину</a></li>
+                <li><a href="Main.html">Про сайт</a></li>
+                <li><a href="Main.html">Допоможи притулку</a></li>
+                <li><a href="Pesik.html">Песики</a></li>
+                <li><a href="Kotik.html">Муркотики</a></li>
+                <li><a href="ProNas.html">Про нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Реєстрація</h2>
+        <form action="#" method="post">
+            <label for="name">Прізвище та Ім'я*</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <label for="phone">Phone number*</label>
+            <br>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+
+            <label for="email">Email*</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="password">Пароль*</label>
+            <br>
+            <input type="password" id="password" name="password" required>
+            <label for="password">Підтвердження паролю*</label>
+            <br>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <a href="Login.html"><button>Зареєструватися</button></a>
+        </form>  
+    </section>
+
+</body>
+</html>
